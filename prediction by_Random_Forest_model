@@ -1,0 +1,21 @@
+prediction by Random Forest model 
+big improvement. Let’s compare side by side:
+
+#Linear Regression
+MAE = 3.87 → Avg. error ≈ 3.9°C
+MSE = 144.08
+RMSE = 12.00°C
+R² = 0.26 → Only 26% of variance explained
+
+#Random Forest Regression
+MAE = 2.16 → Avg. error ≈ 2.2°C (much lower )
+MSE = 16.90 (almost 9× smaller )
+RMSE = 4.11°C (errors reduced by ~8°C )
+R² = 0.91 → Explains 91% of variance (vs 26%)
+
+Conclusion:
+Random Forest is far better for your dataset. It predicts temperature much more accurately from humidity than Linear Regression.
+Linear Regression = too simple (only straight-line fit).
+Random Forest = captures nonlinear patterns → gives high accuracy.
+
+#Stick with Random Forest as your model.
